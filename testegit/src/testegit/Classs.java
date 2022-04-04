@@ -1,4 +1,4 @@
-package Classs;
+package testegit;
 
 public class Classs {
 
