@@ -1,5 +1,5 @@
 package fundamentosdejava;
-
+import java.util.Scanner;
 public class main {
 
 	public static void main(String[] args) {
@@ -85,10 +85,17 @@ public class main {
 //	//		break;
 //	//		default: System.out.println("Sua escolha não é válida");
 //	//	}
-		for (int x=0; x<10; x++) {
-			System.out.println(x);
+	//	for (int x=0; x<10; x++) {
+	//		System.out.println(x);
+	//	}
+		Scanner entrada = new Scanner(System.in);
+		System.out.println("Digite um número qualquer");
+		int y = entrada.nextInt();
+		for(int x=0; x<=10; x++) {
+			System.out.println(y + " x " + x + " = " + x*y);
 		}
-
+		
 	}
 
 }
+//}
