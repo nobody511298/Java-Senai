@@ -7,6 +7,7 @@ public class main {
 		
 		Retangulo retangulo = new Retangulo();
 		Quadrado quadrado = new Quadrado();
+		this.
 	
 		AreaCalculavel.calcularAreaQ();
 	}
