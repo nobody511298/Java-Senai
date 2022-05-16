@@ -1,8 +1,7 @@
 
 public class Quadrado implements AreaCalculavel{
 	
-	private int lado;
-	
+	private int lado = 2;
 	
 	public int getLado() {
 		return lado;

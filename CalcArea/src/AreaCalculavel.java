@@ -2,8 +2,7 @@
 public interface AreaCalculavel {
 	
 	public void calcularAreaQ();
-	
-	public valor (int l, int h) {
-		
+	System.out.println("teste");
+		syso
 	}
 }
