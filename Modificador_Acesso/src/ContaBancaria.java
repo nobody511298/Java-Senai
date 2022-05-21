@@ -1,11 +1,12 @@
 
 public class ContaBancaria {
 	 
-	
+	//cria variaveis privadas de vários tipos
 	private	int numConta;
 	private	boolean ativo;
 	private	double saldo;
 	
+	//cria o método contabancaria que seta os valores de ativo e saldo
 	public ContaBancaria() {
 		ativo = true;
 		saldo = 1.0;

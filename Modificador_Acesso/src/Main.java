@@ -18,8 +18,11 @@ public class Main {
 //		ContaBancaria conta2 = new ContaBancaria();
 //		System.out.println(conta2.saldo());
 		
+		//estancia novo objeto de Cliente
+		
 		Cliente cliente1 = new Cliente();
 		
+		//seta as informações da conta usando o metodo set
 		cliente1.setNome("ADRIAN");
 		cliente1.setCpf(123456);
 		cliente1.setNumConta(654321);
@@ -27,6 +30,7 @@ public class Main {
 		
 		System.out.println(cliente1.toString());
 		
+		//faz a mesma coisa de cliente1, apenas alterando as informações pessoais
 		Cliente cliente2 = new Cliente();
 		
 		cliente2.setNome("ADRIAN");

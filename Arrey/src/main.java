@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.Scanner; //importa a biblioteca scanner para receber valores do usuário 
 
 public class main {
 
@@ -8,24 +8,33 @@ public class main {
 		int y1 = 5;
 		int z1 = 7;
 		
+		//imprime no monitor serial os valores de x1;z1 e y1
 		System.out.println(x1);
 		System.out.println(y1);
 		System.out.println(z1);
-
+		
+		//double x [] cria uma matriz do tipo double intitulada x
 		double x [] = {3, 5, 3, 5};
+		
+		//cria um loop até que a condição da expressão se torne falsa/verdadeira
 		
 		for (int aux = 0; aux < x.length; aux++) {
 			System.out.println("Valor do índice " + aux + " = " + x[aux]);
 		}
 		String nome[] = { "Rafael", "Lara", "Gislene"};
 		
+		//cria um loop até que a condição da expressão se torne falsa/verdadeira
+		
 		for (int aux1 = 0; aux1 < nome.length; aux1++) {
 			System.out.println(nome[aux1]);
+			
+			//cria uma condição de que se o atributo nome for igual a "Gislene" o sistema imprime no monitor o conteúdo dentro
+			//de Syso[...]
 			if (nome[aux1] == "Gislene") {
 				System.out.println("O índice de Gislene é = " + aux1);
 			}
 		}
-		
+		//cria variás matrizes de vários tipos (int;String e double)
 		int [] arrayInt = new int[5];
 		String [] ArrayString = new String[4];
 		double[] ArrayDouble = new double[3];

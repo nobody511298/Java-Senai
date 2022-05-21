@@ -1,6 +1,8 @@
 
 public class Bebida {
 	
+	//cria variaveis
+	
 	private String nome;
 	private boolean aquecer;
 	

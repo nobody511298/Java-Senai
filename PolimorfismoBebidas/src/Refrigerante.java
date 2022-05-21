@@ -5,7 +5,8 @@ public class Refrigerante extends Bebida {
 		super("Refrigerante", false);
 		
 	}
-
+	
+	//cria o método preparar de Refrigerante
 	@Override
 	public void preparar() {
 		// TODO Auto-generated method stub
