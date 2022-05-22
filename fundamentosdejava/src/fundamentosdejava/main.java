@@ -88,8 +88,12 @@ public class main {
 	//	for (int x=0; x<10; x++) {
 	//		System.out.println(x);
 	//	}
+		
+		//scanner é usado para receber informações pelo teclado
+		
 		Scanner entrada = new Scanner(System.in);
 		System.out.println("Digite um número qualquer");
+		//insere o valor na variavel y
 		int y = entrada.nextInt();
 		for(int x=0; x<=10; x++) {
 			System.out.println(y + " x " + x + " = " + x*y);

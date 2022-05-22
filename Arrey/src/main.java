@@ -13,7 +13,7 @@ public class main {
 		System.out.println(y1);
 		System.out.println(z1);
 		
-		//double x [] cria uma matriz do tipo double intitulada x
+		//"double x []" cria uma matriz do tipo double intitulada x
 		double x [] = {3, 5, 3, 5};
 		
 		//cria um loop até que a condição da expressão se torne falsa/verdadeira
@@ -44,21 +44,28 @@ public class main {
 		int[] numero = new int [6];
 		Scanner teclado = new Scanner(System.in);
 		
+		//todos os for criam um loop até que a condição da expressão se torne falsa/verdadeira
+		
 		for (int aux2 = 0; aux2 < numero.length; aux2++) {
 			System.out.println("Digite um número qualquer");
 			numero[aux2] = teclado.nextInt();
 		}
+		
 		for (int aux2 = 0; aux2 < numero.length; aux2++) {
 			System.out.println("Índice " +aux2+ " = " + numero[aux2]);
 		}
 		int[] arrayQualquer = new int [3];
 		Object[] arrayObject = new Object[6];
 		
+		//coloca valores dentro da matriz
+		
 		arrayObject[0] = 12;
 		arrayObject[1] = "Rafael";
 		arrayObject[2] =13.8;
 		arrayObject[3] = true;
 		arrayObject[5] = arrayQualquer;
+		
+		//cria um loop até que a condição da expressão se torne falsa/verdadeira
 		
 		for (int aux2 = 0; aux2 < arrayObject.length; aux2++) {
 			System.out.println("Indice " + aux2+ " = " + arrayObject[aux2]);
@@ -67,10 +74,15 @@ public class main {
 		arrayBidirecional[0][0]=8;
 		arrayBidirecional[2][1]=7;
 		
+		//cria um loop até que a condição da expressão se torne falsa/verdadeira
+		
 		for (int linha = 0; linha <arrayBidirecional.length; linha++) {
 			for (int coluna = 0; coluna <arrayBidirecional[0].length; coluna++) {
 				System.out.println("Indice [" +linha+ "]["+coluna+"] = " + arrayBidirecional[linha][coluna]+ "");
 			}
+			
+			//pula uma linha
+			
 			System.out.println();
 			}
 		}

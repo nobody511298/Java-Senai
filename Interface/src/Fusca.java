@@ -1,6 +1,10 @@
 
 public class Fusca implements Carro {
-
+	
+	//
+	// tudo que acontece aqui ja foi comentado classe ferrari
+	//
+	
 	@Override
 	public void virarEsquerda() {
 		System.out.println("Fusca virou a esquerda");
