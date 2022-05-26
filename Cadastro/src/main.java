@@ -15,6 +15,7 @@ public class main {
 		
 		
 		Pessoa pessoa1 = new Pessoa ();
+		//colocar sistema *for*
 		System.out.println("Insira o nome");
 		pessoa1.setNome(entrada.next());
 		
