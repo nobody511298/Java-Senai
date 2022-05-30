@@ -3,11 +3,13 @@ import java.util.List;
 
 public class Pessoa {
 	
+	//cria variaveis privadas
 	private int idade;
 	private String nome;
 	private String endereco;
 	
-	
+		
+	//método get e set para inserir e visualizar dados
 		public int getIdade() {
 			return idade;
 		}
@@ -27,6 +29,7 @@ public class Pessoa {
 			this.endereco = endereco;
 		}
 		
+		//to string para converter de endereço para string
 		@Override
 		public String toString() {
 			return "Pessoa [idade=" + idade + ", nome=" + nome + ", endereco=" + endereco + "]";

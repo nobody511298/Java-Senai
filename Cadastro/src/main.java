@@ -1,12 +1,22 @@
 import java.util.ArrayList;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.FileWriter;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
+		
+	
+		
+		//insere scanner
 		Scanner entrada = new Scanner(System.in);
+		
+		//cria novas listas
 		List lista = new ArrayList();
 		List lista2 = new ArrayList();
 		List lista3 = new ArrayList();
@@ -15,21 +25,21 @@ public class main {
 		
 		
 		Pessoa pessoa1 = new Pessoa ();
+		
 		//colocar sistema *for*
+		
+	
+	
+			
 		System.out.println("Insira o nome");
 		pessoa1.setNome(entrada.next());
-		
 		System.out.println("Insira o endereço");
 		pessoa1.setEndereco(entrada.next());
-		
 		System.out.println("Insira a idade");
 		pessoa1.setIdade(entrada.nextInt());
-		
-		
-		
 		System.out.println("Cadastrado com sucesso");
 		System.out.println();
-		
+				
 		Pessoa pessoa2 = new Pessoa ();
 		
 		System.out.println("Insira o nome");
@@ -75,5 +85,21 @@ public class main {
 		System.out.println(lista3);
 		System.out.println();
 		
+		
+		
+		try(BufferedWriter escrever = new BufferedWriter (new FileWriter("Saida.txt"))){
+			
+			//aponta para os objetos de mouse, converte para String e grava no arquivo .txt	
+				
+					escrever.write();
+				
+				}
+		
 	}
-}
+
+	@Override
+	public String toString() {
+		return "main [toString()=" + super.toString() + "]";
+	}
+	}
+	

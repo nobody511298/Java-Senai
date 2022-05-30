@@ -13,14 +13,6 @@ public class Mouse {
 	
 	
 	
-	public Mouse(String texto) {
-		String[] arrayAuxliar1 = texto.split(",");
-		String[] arrayAuxliar2 = arrayAulixar1[0].split("=");
-		this.funciona = arrayAuxiliar2[1].trim();
-		
-		
-		
-	}
 	//métodos get e set para setar e pegar valores dos atributos
 	
 	public boolean isFunciona() {
