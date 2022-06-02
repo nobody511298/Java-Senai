@@ -10,96 +10,68 @@ public class main {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
-		
-	
-		
-		//insere scanner
+
+		// insere scanner
 		Scanner entrada = new Scanner(System.in);
-		
-		//cria novas listas
+
+		// cria nova lista
 		List lista = new ArrayList();
-		List lista2 = new ArrayList();
-		List lista3 = new ArrayList();
-		
-		
-		
-		
-		Pessoa pessoa1 = new Pessoa ();
-		
-		//colocar sistema *for*
-		
-	
-	
-			
-		System.out.println("Insira o nome");
-		pessoa1.setNome(entrada.next());
-		System.out.println("Insira o endereço");
-		pessoa1.setEndereco(entrada.next());
-		System.out.println("Insira a idade");
-		pessoa1.setIdade(entrada.nextInt());
-		System.out.println("Cadastrado com sucesso");
+
+		// coloca sistema *for*
+
+		for (int x = 0; x < 4; x++) {
+			Pessoa pessoa = new Pessoa();
+			pessoa.setEndereco(new Endereco());
+			pessoa.getEndereco().setBairro(entrada.next());
+
+			System.out.println("Insira o nome");
+			pessoa.setNome(entrada.next());
+
+			System.out.println("Insira 1 para Feminino e 2 para Masculino");
+			int opcao = 0;
+			while (opcao != 1 && opcao != 2) {
+				opcao = entrada.nextInt();
+				if (opcao == 2)
+					pessoa.setSex(Sexo.MASCULINO);
+				else if (opcao == 1)
+					pessoa.setSex(Sexo.FEMININO);
+				else {
+					System.out.println("OpÃ§Ã£o invÃ¡lida");
+					System.out.println("Tente novamente");
+					System.out.println("Insira 1 para Feminino e 2 para Masculino");
+				}
+			}
+
+			System.out.println("Insira a rua");
+			pessoa.getEndereco().setRua(entrada.next());
+
+			System.out.println("Insira o numero");
+			pessoa.getEndereco().setNumero(entrada.nextInt());
+
+			System.out.println("Insira o bairro");
+			pessoa.getEndereco().setBairro(entrada.next());
+
+			System.out.println("Insira a idade");
+			pessoa.setIdade(entrada.nextInt());
+
+			System.out.println("Cadastrado com sucesso");
+
+			// adiciona pessoa na lista
+			lista.add(pessoa);
+
+		}
 		System.out.println();
-				
-		Pessoa pessoa2 = new Pessoa ();
-		
-		System.out.println("Insira o nome");
-		pessoa2.setNome(entrada.next());
-		
-		System.out.println("Insira o endereço");
-		pessoa2.setEndereco(entrada.next());
-		
-		System.out.println("Insira a idade");
-		pessoa2.setIdade(entrada.nextInt());
-		
-		
-		
-		System.out.println("Cadastrado com sucesso");
-		System.out.println();
-		
-		
-		Pessoa pessoa3 = new Pessoa ();
-		
-		System.out.println("Insira o nome");
-		pessoa3.setNome(entrada.next());
-		
-		System.out.println("Insira o endereço");
-		pessoa3.setEndereco(entrada.next());
-		
-		System.out.println("Insira a idade");
-		pessoa3.setIdade(entrada.nextInt());
-		
-		
-		
-		System.out.println("Cadastrado com sucesso");
-		System.out.println();
-		
-		lista.add(pessoa1);
 		System.out.println(lista);
 		System.out.println();
 		
-		lista2.add(pessoa2);
-		System.out.println(lista2);
-		System.out.println();
-		
-		lista3.add(pessoa3);
-		System.out.println(lista3);
-		System.out.println();
-		
-		
-		
-		try(BufferedWriter escrever = new BufferedWriter (new FileWriter("Saida.txt"))){
-			
-			//aponta para os objetos de mouse, converte para String e grava no arquivo .txt	
-				
-					escrever.write();
-				
-				}
-		
-	}
+		//escreve a lista em txt
 
-	@Override
-	public String toString() {
-		return "main [toString()=" + super.toString() + "]";
+		try (BufferedWriter escrever = new BufferedWriter(new FileWriter("Saida.txt"))) {
+
+			// aponta para os objetos de mouse, converte para String e grava no arquivo .txt
+
+			escrever.write(lista.toString());
+
+		}
 	}
-	}
-	
+}
