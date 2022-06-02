@@ -24,9 +24,15 @@ public class Endereco  {
 	}
 	@Override
 	public String toString() {
-		return "Endereco [rua=" + rua + ", numero=" + numero + ", bairro=" + bairro + "]";
+		return "Endereco: rua=" + rua + ", numero=" + numero + ", bairro=" + bairro ;
+	}	
+
+	public Endereco(String[] arrayLinha) {
+		
+		String[] arrayRua = arrayLinha[3].split("=");
+		this.rua = arrayRua[1].trim();
+		
+		
 	}
-	
-	
 
 }

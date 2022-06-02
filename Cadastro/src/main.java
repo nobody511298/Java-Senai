@@ -1,5 +1,7 @@
 import java.util.ArrayList;
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.FileWriter;
 import java.util.ArrayList;
@@ -15,14 +17,13 @@ public class main {
 		Scanner entrada = new Scanner(System.in);
 
 		// cria nova lista
-		List lista = new ArrayList();
+		List<Pessoa> listaPessoaEscrever = new ArrayList();
 
 		// coloca sistema *for*
 
 		for (int x = 0; x < 4; x++) {
 			Pessoa pessoa = new Pessoa();
 			pessoa.setEndereco(new Endereco());
-			pessoa.getEndereco().setBairro(entrada.next());
 
 			System.out.println("Insira o nome");
 			pessoa.setNome(entrada.next());
@@ -63,15 +64,29 @@ public class main {
 		System.out.println();
 		System.out.println(lista);
 		System.out.println();
-		
-		//escreve a lista em txt
 
 		try (BufferedWriter escrever = new BufferedWriter(new FileWriter("Saida.txt"))) {
-
 			// aponta para os objetos de mouse, converte para String e grava no arquivo .txt
-
 			escrever.write(lista.toString());
 
+		}
+		
+
+		List<Pessoa> listaPessoaLer = new ArrayList();
+		
+		try(BufferedReader reader = new BufferedReader(new FileReader("Entrada.txt"))){
+			String line;			
+			while((line = reader.readLine())!=null) {
+			
+				Pessoa pessoa = new Pessoa(line);
+				
+				listaPessoaLer.add(pessoa);
+				
+			}
+		}
+		
+		for(Pessoa pessoa: listaPessoaLer) {
+			System.out.println(pessoa);
 		}
 	}
 }
