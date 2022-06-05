@@ -4,7 +4,6 @@ import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.FileWriter;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -17,7 +16,7 @@ public class main {
 		Scanner entrada = new Scanner(System.in);
 
 		// cria nova lista
-		List<Pessoa> listaPessoaEscrever = new ArrayList();
+		List<Pessoa> listaPessoaEscrever = new ArrayList<Pessoa>();
 
 		// coloca sistema *for*
 
@@ -25,7 +24,7 @@ public class main {
 			Pessoa pessoa = new Pessoa();
 			pessoa.setEndereco(new Endereco());
 
-			System.out.println("Insira o nome");
+		 	System.out.println("Insira o nome");
 			pessoa.setNome(entrada.next());
 
 			System.out.println("Insira 1 para Feminino e 2 para Masculino");
@@ -58,23 +57,21 @@ public class main {
 			System.out.println("Cadastrado com sucesso");
 
 			// adiciona pessoa na lista
-			lista.add(pessoa);
+			listaPessoaEscrever.add(pessoa);
 
 		}
-		System.out.println();
-		System.out.println(lista);
-		System.out.println();
+		
 
-		try (BufferedWriter escrever = new BufferedWriter(new FileWriter("Saida.txt"))) {
+		try (BufferedWriter escrever = new BufferedWriter(new FileWriter("Cadastro.txt"))) {
 			// aponta para os objetos de mouse, converte para String e grava no arquivo .txt
-			escrever.write(lista.toString());
+			escrever.write(listaPessoaEscrever.toString());
 
 		}
 		
 
-		List<Pessoa> listaPessoaLer = new ArrayList();
+		List<Pessoa> listaPessoaLer = new ArrayList<Pessoa>();
 		
-		try(BufferedReader reader = new BufferedReader(new FileReader("Entrada.txt"))){
+		try(BufferedReader reader = new BufferedReader(new FileReader("Saida.txt"))){
 			String line;			
 			while((line = reader.readLine())!=null) {
 			
@@ -84,6 +81,7 @@ public class main {
 				
 			}
 		}
+		
 		
 		for(Pessoa pessoa: listaPessoaLer) {
 			System.out.println(pessoa);

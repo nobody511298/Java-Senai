@@ -1,3 +1,0 @@
-[Pessoa [idade=234, nome=]gfdh, endereco=Endereco [rua=gfdgh, numero=324, bairro=fh], sex=FEMININO]
-, Pessoa [idade=234, nome=rh, endereco=Endereco [rua=gfdg, numero=343, bairro=fh], sex=FEMININO]
-]
