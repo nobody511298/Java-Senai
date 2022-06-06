@@ -14,45 +14,24 @@ public class main {
 		
 		
 		
-	
-				Scanner teclado = new Scanner(System.in);
+		
+				Scanner teclado = new Scanner(System.in); //chama o método Scanner 
+				//cria uma lista da "variavel" mouse (pois foi encapsulado todos os atributos dentro de mouse) 
+				ArrayList<Mouse> Periferico = new ArrayList();
+				for (int x = 0; x < 3; x++) {
+					
 				
-				Mouse mouse1 = new Mouse();
-				System.out.println("botoes");
-				mouse1.setQtdBotoes(teclado.nextInt());
+				Mouse mouse1 = new Mouse(); //estancia um novo objeto
+				System.out.println("botoes"); 
+				mouse1.setQtdBotoes(teclado.nextInt()); // recebe valores inseridos pelo usuario via método scanner
 				System.out.println("funciona?");
 				mouse1.setFunciona(teclado.nextBoolean());
 				System.out.println("tamanho");
 				mouse1.setTamanho(teclado.next());
-				
-				Mouse mouse2 = new Mouse();
-				
-				System.out.println("botoes");
-				mouse2.setQtdBotoes(teclado.nextInt());
-				System.out.println("funciona?");
-				mouse2.setFunciona(teclado.nextBoolean());
-				System.out.println("tamanho");
-				mouse2.setTamanho(teclado.next());
-
-				Mouse mouse3 = new Mouse();
-				
-				System.out.println("botoes");
-				mouse3.setQtdBotoes(teclado.nextInt());
-				System.out.println("funciona?");
-				mouse3.setFunciona(teclado.nextBoolean());
-				System.out.println("tamanho");
-				mouse3.setTamanho(teclado.next());
-
-				
-				//cria uma lista da "variavel" mouse (pois foi encapsulado todos os atributos dentro de mouse) 
-				ArrayList<Mouse> Periferico = new ArrayList();
-				
 				//adiciona os objetos de mouse à lista
-				
 				Periferico.add(mouse1);
-				Periferico.add(mouse2);
-				Periferico.add(mouse3);
 				
+				}
 				
 				//tenta gravar no hdd em arquivo txt oque será pedido em escrever.write
 				
@@ -69,9 +48,11 @@ public class main {
 						
 						while((line = reader.readLine())!=null) {
 							string += line + "\n";
+							
 						
 						}
 						System.out.println(string);
+						
 					}
 					
 		

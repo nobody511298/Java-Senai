@@ -17,16 +17,17 @@ public class cliente {
 		Scanner entrada = new Scanner(System.in);
 		// TODO Auto-generated method stub
 		
+		//pede para o usuario digitar as informações, usando o método scanner
 		System.out.println("Digite seu nome");
 		cliente = entrada.nextLine();
 		System.out.println(cliente);
 		
 		System.out.println("Digite sua conta");
-		conta = entrada.nextLine();
+		conta = entrada.nextInt();
 		System.out.println(cliente);
 		
 		System.out.println("Digite pix");
-		pix = entrada.nextLine();
+		pix = entrada.nextInt();
 		System.out.println(cliente);
    
 	

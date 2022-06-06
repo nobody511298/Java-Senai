@@ -1,6 +1,7 @@
 
 public class LeiteQuente extends Bebida {
 	public LeiteQuente() {
+		//indica leite quente como verdadeiro na condição de aquecer
 		super("Leite Quente", true);
 }
 	//cria o metodo preparar de leite quente

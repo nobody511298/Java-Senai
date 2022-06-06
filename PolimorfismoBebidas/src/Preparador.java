@@ -6,9 +6,10 @@ public class Preparador {
 		System.out.println("Preparando a bebida " + bebida.getNome());
 		System.out.println("Pegando o copo");
 			
-		
+			//chama o método preparar de bebida
 			bebida.preparar();
 					
+				//se a condição booleana aquecer for verdadeira, a aplicação executa o comando abaixo, imprimindo no console
 				if(bebida.isAquecer()) {
 					System.out.println("Aquecendo a bebida " + bebida.getNome());	
 				}

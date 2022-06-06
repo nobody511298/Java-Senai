@@ -4,16 +4,17 @@ public class main {
 	public void main(String[] args) {
 		
 		
+		//estancia novo objeto, seta valores e chama o método para calcular a area do retangulo
 		
 		Retangulo retangulo = new Retangulo();
-		Retangulo.setL(5);
-		Retangulo.setH(5);
-		Retangulo.calcularAreaQ();
+		retangulo.setL(5);
+		retangulo.setH(5);
+		retangulo.calcularAreaQ();
 		
-		
+		//estancia novo objeto, seta valores e chama o método para calcular a area do Quadrado
 		Quadrado quadrado = new Quadrado();
-		Quadrado.calcularAreaQ();
-		Quadrado.setLado(5);
+		quadrado.setLado(5);
+		quadrado.calcularAreaQ();
 		System.out.println("calcularArea");
 	
 }}

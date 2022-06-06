@@ -1,3 +1,0 @@
-Mouse [funciona=false, qtdBotoes=5, tamanho=85]
-Mouse [funciona=true, qtdBotoes=2, tamanho=25]
-Mouse [funciona=true, qtdBotoes=4, tamanho=30]

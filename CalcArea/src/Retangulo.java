@@ -4,7 +4,7 @@ public class Retangulo implements AreaCalculavel {
 	private int l;
 	private int h;
 	
-	
+	// esta classe tema mesma lógica da classe quadrado
 	@Override
 	public void calcularAreaQ() {
 		System.out.println(l*h);
