@@ -77,7 +77,7 @@ public class Data {
 			}
 		}
 
-		// Métodos getters
+		// Método get e set para setar e puxar dados
 		
 		public int getDia() {
 			return dia;
