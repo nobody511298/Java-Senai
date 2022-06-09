@@ -1,0 +1,5 @@
+[Cliente valorPagarServico= 12.66, servico= Servico [nome= Serviço_1, qtdHorasServico= 2.5, valorHoraServico= 90.0, mecanico= Mecanico = [maoDeObra= 60.0]], formapag= A_VISTA
+, Cliente valorPagarServico= 22.67, servico= Servico [nome= Serviço_1, qtdHorasServico= 2.5, valorHoraServico= 90.0, mecanico= Mecanico = [maoDeObra= 60.0]], formapag= CARNE
+, Cliente valorPagarServico= 34.66, servico= Servico [nome= Serviço_2, qtdHorasServico= 2.5, valorHoraServico= 60.0, mecanico= Mecanico = [maoDeObra= 80.0]], formapag= A_VISTA
+, Cliente valorPagarServico= 22.66, servico= Servico [nome= Serviço_2, qtdHorasServico= 2.5, valorHoraServico= 60.0, mecanico= Mecanico = [maoDeObra= 80.0]], formapag= CARTAO_CREDITO
+]
