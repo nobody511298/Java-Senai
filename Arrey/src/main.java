@@ -1,8 +1,8 @@
-import java.util.Scanner; //importa a biblioteca scanner para receber valores do usu·rio 
+import java.util.Scanner; //importa a biblioteca scanner para receber valores do usu√°rio 
 
 public class main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) {//
 	
 		int x1 = 3;
 		int y1 = 5;
@@ -16,25 +16,26 @@ public class main {
 		//"double x []" cria uma matriz do tipo double intitulada x
 		double x [] = {3, 5, 3, 5};
 		
-		//cria um loop atÈ que a condiÁ„o da express„o se torne falsa/verdadeira
+		//cria um loop at√© que a condi√ß√£o da express√£o se torne falsa/verdadeira
 		
 		for (int aux = 0; aux < x.length; aux++) {
-			System.out.println("Valor do Ìndice " + aux + " = " + x[aux]);
+			System.out.println("Valor do √≠ndice " + aux + " = " + x[aux]);
 		}
+		//cria um String denominada nome e coloca os seguintes valores dentro dela
 		String nome[] = { "Rafael", "Lara", "Gislene"};
 		
-		//cria um loop atÈ que a condiÁ„o da express„o se torne falsa/verdadeira
+		//cria um loop at√© que a condi√ß√£o da express√£o se torne falsa/verdadeira
 		
 		for (int aux1 = 0; aux1 < nome.length; aux1++) {
 			System.out.println(nome[aux1]);
 			
-			//cria uma condiÁ„o de que se o atributo nome for igual a "Gislene" o sistema imprime no monitor o conte˙do dentro
+			//cria uma condi√ß√£o de que se o atributo nome for igual a "Gislene" o sistema imprime no monitor o conte√∫do dentro
 			//de Syso[...]
 			if (nome[aux1] == "Gislene") {
-				System.out.println("O Ìndice de Gislene È = " + aux1);
+				System.out.println("O √≠ndice de Gislene √© = " + aux1);
 			}
 		}
-		//cria vari·s matrizes de v·rios tipos (int;String e double)
+		//cria vari√°s matrizes de v√°rios tipos (int;String e double)
 		int [] arrayInt = new int[5];
 		String [] ArrayString = new String[4];
 		double[] ArrayDouble = new double[3];
@@ -44,15 +45,15 @@ public class main {
 		int[] numero = new int [6];
 		Scanner teclado = new Scanner(System.in);
 		
-		//todos os for criam um loop atÈ que a condiÁ„o da express„o se torne falsa/verdadeira
+		//todos os for criam um loop at√© que a condi√ß√£o da express√£o se torne falsa/verdadeira
 		
 		for (int aux2 = 0; aux2 < numero.length; aux2++) {
-			System.out.println("Digite um n˙mero qualquer");
+			System.out.println("Digite um n√∫mero qualquer");
 			numero[aux2] = teclado.nextInt();
 		}
 		
 		for (int aux2 = 0; aux2 < numero.length; aux2++) {
-			System.out.println("Õndice " +aux2+ " = " + numero[aux2]);
+			System.out.println("√çndice " +aux2+ " = " + numero[aux2]);
 		}
 		int[] arrayQualquer = new int [3];
 		Object[] arrayObject = new Object[6];
@@ -65,7 +66,7 @@ public class main {
 		arrayObject[3] = true;
 		arrayObject[5] = arrayQualquer;
 		
-		//cria um loop atÈ que a condiÁ„o da express„o se torne falsa/verdadeira
+		//cria um loop at√© que a condi√ß√£o da express√£o se torne falsa/verdadeira
 		
 		for (int aux2 = 0; aux2 < arrayObject.length; aux2++) {
 			System.out.println("Indice " + aux2+ " = " + arrayObject[aux2]);
@@ -74,7 +75,7 @@ public class main {
 		arrayBidirecional[0][0]=8;
 		arrayBidirecional[2][1]=7;
 		
-		//cria um loop atÈ que a condiÁ„o da express„o se torne falsa/verdadeira
+		//cria um loop at√© que a condi√ß√£o da express√£o se torne falsa/verdadeira
 		
 		for (int linha = 0; linha <arrayBidirecional.length; linha++) {
 			for (int coluna = 0; coluna <arrayBidirecional[0].length; coluna++) {
