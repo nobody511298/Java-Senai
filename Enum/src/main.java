@@ -13,6 +13,7 @@ public class main {
 
 	double	pi = main.PI;
 		
+		//seta dia da semana como SEGUNDA
 		DiaDaSemana hoje = DiaDaSemana.SEGUNDA;
 		
 		int num = DiaDaSemana.SEGUNDA.getNum();
@@ -23,12 +24,13 @@ public class main {
 		
 		System.out.println(hoje.getNum());
 		
+		// seta sexo como feminino chamandp o ENUM sexo e a variavel feminino
 		Sexo sexo = Sexo.FEMININO;
 		 sexo = Sexo.MASCULINO;
 		
 
 		
-			
+			//cria uma nova array como denominadas linhas e diversos tipos
 			int[] arrayInt = new int [5];
 			String[] ArrayString = new String [4];
 			double[] ArrayDouble = new double[3];
